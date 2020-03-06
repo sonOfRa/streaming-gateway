@@ -1,0 +1,6 @@
+# Add new users to this file
+streaminggate.users.alice=passKeyAlice
+streaminggate.users.bob=passKeyBob
+
+server.port=31337
+server.address=127.0.0.1
