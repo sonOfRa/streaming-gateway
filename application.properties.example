@@ -1,6 +1,18 @@
 # Add new users to this file
-streaminggate.users.alice=passKeyAlice
-streaminggate.users.bob=passKeyBob
+streaminggate.users.passKeys.alice=passKeyAlice
+streaminggate.users.passKeys.bob=passKeyBob
 
-server.port=31337
-server.address=127.0.0.1
+# If set to false, users are defined in this file, as above.
+# If set to true, users are defined in a database, and the users in this file are ignored
+# This requires setting a data source.
+streaminggate.config.db=false
+
+# Data Source configuration. Not needed if db mode is disabled.
+# Currently, drivers are included for H2, MySQL and Postgres
+# spring.datasource.url=jdbc:mysql://localhost/test
+# spring.datasource.username=dbuser
+# spring.datasource.password=dbpass
+
+# Optionally set server and port. By default tomcat will listen on all interfaces and port 8080
+# server.port=31337
+# server.address=127.0.0.1
