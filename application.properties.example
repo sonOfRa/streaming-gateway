@@ -9,6 +9,8 @@ streaminggate.config.db=false
 
 # Data Source configuration. Not needed if db mode is disabled.
 # Currently, drivers are included for H2, MySQL and Postgres
+# If db mode is enabled, and no data source is set here, spring will create an in-memory H2 database.
+# That database will be deleted every time the application exits.
 # spring.datasource.url=jdbc:mysql://localhost/test
 # spring.datasource.username=dbuser
 # spring.datasource.password=dbpass

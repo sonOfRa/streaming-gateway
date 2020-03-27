@@ -1,0 +1,21 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="1" author="Simon Levermann">
+        <createTable tableName="USER">
+            <column name="ID" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="USER_PK" nullable="false"/>
+            </column>
+            <column name="NAME" type="varchar">
+                <constraints unique="true" uniqueConstraintName="USER_UNIQUE_NAME" nullable="false"/>
+            </column>
+            <column name="PASS_KEY" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

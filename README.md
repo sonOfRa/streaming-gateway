@@ -1,11 +1,26 @@
 # Streaming Gateway for nginx-rtmp
+- [Usage](#usage)
+  * [Configure gateway](#configure-gateway)
+    + [Proceed with a flat file](#proceed-with-a-flat-file)
+    + [Proceed with a database](#proceed-with-a-database)
+  * [Configure nginx-rtmp](#configure-nginx-rtmp)
+  * [Configure your streaming software](#configure-your-streaming-software)
+  * [Watch your streams](#watch-your-streams)
+
 ## Usage
 ### Configure gateway
 1. Build the project ```./mvnw clean package``` or download a release from releases tab
 2. Copy the jar to the destination server
 3. Create an ```application.properties``` file. An example file is in the repository
-4. Add at least one user to the properties file
-5. Launch the software with ```java -jar downloaded_name.jar```
+#### Proceed with a flat file
+1. Add at least one user to the properties file
+2. Launch the software with ```java -jar downloaded_name.jar```
+
+#### Proceed with a database
+1. Configure the database connection in ```application.properties```. Example data can be found in the example properties
+file.
+2. Add users to the database (for now, there is no web interface for this)
+3. Launch the software with ```java -jar downloaded_name.jar```
 
 ### Configure nginx-rtmp
 The example configuration file takes the input data in the ingest application 

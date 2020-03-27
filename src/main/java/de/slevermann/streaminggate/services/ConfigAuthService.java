@@ -2,7 +2,6 @@ package de.slevermann.streaminggate.services;
 
 import de.slevermann.streaminggate.config.UserConfig;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 
