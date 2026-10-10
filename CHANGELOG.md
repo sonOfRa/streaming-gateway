@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- Auth log entries include the user, client address and auth result as structured key-value fields
 
 ## [2.0.0] 2026-10-10
 ### Changed
