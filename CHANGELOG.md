@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [2.0.0] 2026-10-10
 ### Changed
 - Updated to Spring Boot 4.1 and Maven 3.10. Java 25 or newer is now required to build and run
 ### Removed
